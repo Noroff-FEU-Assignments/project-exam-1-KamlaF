@@ -1,0 +1,164 @@
+header {
+    display: flex;
+    flex-direction: column;
+    color: #0e2756;
+    padding: 10px;
+  }
+  
+  .header2 {
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    border-bottom: 1px solid grey;
+    
+  }
+  
+  nav {
+    position: absolute;
+  }
+  nav,
+  #menu-checkbox {
+    display: none;
+  }
+  #menu-checkbox:checked ~ nav {
+    display: inline-flex;
+    flex-direction: column;
+    background-color: #e4e4e4;
+    padding: 20px;
+    font-size: 25px;
+  }
+  
+  .navgone {
+    display: none;
+  }
+  
+  nav a {
+    color: #0e2756;
+  }
+
+  .form-error {
+    display: none;
+    color: red;
+    font-size: 0.9rem;
+    margin-top: 2px;
+  }
+
+  .contactButton {
+    width: 140px;
+    height: 45px;
+    font-family: "Roboto", sans-serif;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  .contactButton:hover {
+    background-color:darkolivegreen;
+    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+    color: #fff;
+    transform: translateY(-7px);
+  }
+
+  #thankYouMessage {
+    display: none;
+    padding: 50px;
+    
+  }
+
+  .containerform {
+    min-width: 400px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    box-shadow: 0 5px 100px rgba(46, 229, 157, 0.4);
+    flex-direction: column;
+  }
+  
+  .contactForm {
+    display: flex;
+    flex-direction: row;
+  }
+
+  form {
+    height: 75vh;
+    width: 10vw;
+    display: flex;
+    place-content: center;
+    flex-direction: column;
+    align-items: center;
+   
+   
+  }
+
+  input{
+    border-radius: 20px;
+    height: 20px;
+    margin: 10px;
+  }
+  
+  .blogPosts{
+   display: flex;
+   flex-direction: column;
+   justify-items: center;
+   justify-content: center;
+   align-items: center;
+   
+   
+   
+  }
+
+  .product-image{
+  height: 300px;
+  width: 400px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  
+  
+  }
+
+ 
+ 
+  
+/* desktop*/
+@media (min-width: 804px) {
+    nav,
+    header {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: static;
+    }
+  
+    a {
+      margin: 30px;
+      font-size: 20px;
+    }
+    .hamburger-icon {
+      display: none;
+    }
+    nav a {
+      display: inline-block;
+      text-decoration: none;
+    } } 
+
+    /*tablet*/
+@media only screen and (min-width: 481px) and (max-width: 803px) {
+
+    .logo{display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+
+        
+    
+
+}}
