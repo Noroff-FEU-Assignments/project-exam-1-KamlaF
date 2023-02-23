@@ -84,4 +84,3 @@ function validateEmail(email) {
   return patternMatches;
 }
 
-<div class="blogContent">${posts.content.rendered}</div>
