@@ -38,3 +38,55 @@ loadMore.onclick = function(){
     getProducts(newUrl);
 }
 
+
+    
+
+
+
+    
+
+        const img = document.getElementById("myImg");
+        const modal = document.getElementById("myModal");
+        const close = document.querySelector(".close")
+        
+        
+        
+        function openCheck(modal) {
+            if (modal.open) {
+              console.log("Modal open");
+            } else {
+              console.log("Modal closed");
+             
+            }
+          }
+        
+        img.addEventListener('click', () =>{
+            modal.showModal();
+            modal.style.display = "block";
+            openCheck(modal);
+            
+         
+        });
+
+      
+        
+        window.onclick = function(event) {
+            if (event.target == modal) {
+              modal.close();
+              openCheck(modal);
+              window.location.reload();
+             
+              
+           
+              
+            }
+
+            
+          }
+        
+
+
+
+  
+
+
