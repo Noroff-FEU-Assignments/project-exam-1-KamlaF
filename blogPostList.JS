@@ -18,13 +18,9 @@ async function getProducts(url){
     
     productContainer.innerHTML +=`
 
-    <a href="/blogPost.html?id=${posts.id}" class = "blogPosts">  
-   
-              
+    <a href="/blogPost.html?id=${posts.id}" class = "blogPosts">      
                <img class="product-image" style="background-image:url('${posts._embedded['wp:featuredmedia'][0].source_url}')"></img>
                <h1 class="blogh1">${posts.title.rendered}</h1>
-              
-   
     </a>
     `
   })

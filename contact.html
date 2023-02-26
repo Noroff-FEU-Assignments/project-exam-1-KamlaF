@@ -1,17 +1,12 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link href="/style.css" rel="stylesheet" />
-        <meta charset="UTF-8" />
-        <meta
-        name="description"
-        content="Blog about food from the wild nature"
-      />
+      <link href="/style.css" rel="stylesheet" />
+      <title>Contact</title>
+      <meta charset="UTF-8" />
+      <meta name="description" content="Contact Page for Wild&Tasty blog"/>
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <script
-      src="https://kit.fontawesome.com/7078051783.js"
-      crossorigin="anonymous"
-    ></script>
+      <script src="https://kit.fontawesome.com/7078051783.js" crossorigin="anonymous"></script>
     <!-- Hotjar Tracking Code for BlogExam -->
 <script>
   (function(h,o,t,j,a,r){
@@ -26,7 +21,10 @@
     </head>
     <body>
     <header>
-        <img src="/images/logo4.png" alt="Logo of MyWebsite.com" class="logo" />
+      <a href="/home.html">
+        <img src="/images/logo4.png" alt="Logo of MyWebsite.com" class="logo"/>
+    </a>
+
 
         <div class="header2"> 
          <input type="checkbox" id="menu-checkbox" />
@@ -41,24 +39,26 @@
           </div>
         </nav></header>
     <main class="mainContact">
+     
          <div class="containerform">
+          <h1 class="contactH1">CONTACT ME</h1>
         <form id="contactForm" class="contactFormClass">
           <div class="nameDiv">
             <label>
-              Full Name(required)
+              Full Name(minimum 5 characters)
               <input name="fullName" id="fullName" />
             </label>
             <div class="form-error" id="fullNameError">
-              Please enter your first name
+              Please enter the 5 first letters from your full name
             </div>
           </div>
           <div class="subject">
             <label>
-              Subject(minimum 10 characters)
+              Subject(minimum 15 characters)
               <input name="subject" id="subject" />
             </label>
             <div class="form-error" id="subjectError">
-              Your subject must be described with at least 10 characters
+              Your subject must be described with at least 15 characters
             </div>
           </div>
           <div class="emailDiv">
@@ -72,7 +72,7 @@
           </div>
           <div class="adressDiv">
             <label>
-              Question(minimum 10 characters)
+              Question(minimum 25 characters)
               <input name="adress" id="adress" />
             </label>
             <div class="form-error" id="adressError">
@@ -87,6 +87,12 @@
       </div>
     
     </main>
+    <footer>
+      <div class="footerC">
+        <p class="copyrightSymb">&#169;</p>
+        <p class="name">Kamilla Fagerland</p>
+      </div>
+    </footer>
     <script src="/contact.js"></script>
     </body>
     </html>

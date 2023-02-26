@@ -17,10 +17,9 @@ async function getProducts(url){
     
     imagesSlideshow.innerHTML +=`
 
-    <a href="/blogPost.html?id=${posts.id}" class="carousel">
-               <img class="carousel-image2" draggable="false" style="background-image:url('${posts._embedded['wp:featuredmedia'][0].source_url}')">
-              
-               </a>   `
+             <a href="/blogPost.html?id=${posts.id}" class="carousel">
+               <img class="carousel-image2" draggable="false" style="background-image:url('${posts._embedded['wp:featuredmedia'][0].source_url}')">  
+             </a>   `
               
   })
   

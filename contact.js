@@ -13,14 +13,14 @@ function validateForm() {
 
   event.preventDefault();
 
-  if (checkLength(fullName.value, 0) === true) {
+  if (checkLength(fullName.value, 4) === true) {
     fullNameError.style.display = "none";
   } else {
     isValid = false;
     fullNameError.style.display = "block";
   }
 
-  if (checkLength(subject.value, 9) === true) {
+  if (checkLength(subject.value, 14) === true) {
     subjectError.style.display = "none";
   } else {
     isValid = false;
@@ -34,7 +34,7 @@ function validateForm() {
     emailError.style.display = "block";
   }
 
-  if (checkLength(adress.value, 9) === true) {
+  if (checkLength(adress.value, 24) === true) {
     adressError.style.display = "none";
   } else {
     isValid = false;
